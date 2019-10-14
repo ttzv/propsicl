@@ -1,2 +1,2 @@
 # propsicl
-Simple class that allows to quickly generate and use custom properties in your application 
+Tiny "library" that allows to quickly generate and use custom properties in your application 
