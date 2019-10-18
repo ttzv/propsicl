@@ -139,7 +139,7 @@ public abstract class Propsicl {
 
 
     /**
-     * Loads defaults from default.props file and main props from main.props file, initializes main properties object with defaults list and populates it with values read from main.props.
+     * Loads defaults from default.properties file and main props from main.properties file, initializes main properties object with defaults list and populates it with values read from main.properties.
      */
     private void create(){
         //load from default props file and store in default object
@@ -222,12 +222,12 @@ public abstract class Propsicl {
                     .resolve("cfg");
         }
 
-        defPropsName = this.getClass().getSimpleName() + "_def.props";
-        mainPropsName = this.getClass().getSimpleName() + "_main.props";
+        defPropsName = this.getClass().getSimpleName() + "_def.properties";
+        mainPropsName = this.getClass().getSimpleName() + "_main.properties";
 
         //Create directory tree
         this.createPropsDir();
-        //Create .props files
+        //Create .properties files
         this.createPropsFiles();
         //put something in defaults and save it
         this.defaultPropsVals();
